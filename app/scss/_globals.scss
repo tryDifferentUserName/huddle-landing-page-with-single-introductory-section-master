@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+$violet:  hsl(257, 40%, 49%);
+$magenta: hsl(300, 69%, 71%);
+
+
+body{
+  background: $violet;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 26px 46px;
+  background-image: url("../../images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  color: #fff;
+}
+.fab{
+  cursor: pointer;
+}
+.d-flex{
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+.img-logo{
+  width: 200px;
+}
+.btn-register{
+  background: #fff;
+  color: $violet;
+  padding: 0.4em 4em;
+  border-radius: 50px;
+  cursor: pointer;
+}
+header{
+  margin-bottom: 55px;
+}
+main{
+  height: 80vh;
+  margin-bottom: 30px;
+  .hero-img{
+    margin-bottom: 65px;
+  }
+  .hero-cla{
+    font-size: 0.8rem;
+      h1{
+      margin-bottom: 20px;
+      }
+  }
+  p{
+    margin-bottom: 20px;
+  }
+}
+@media (min-width:768px) {
+  body{
+    padding: 76px;
+    background-image: url("../../images/bg-desktop.svg");
+  }
+  main{
+    display: flex;
+    height: 65vh;
+  }
+  .d-flex{
+    justify-content: flex-end;  
+  }
+  .hero-cla{
+    text-align: left;
+    margin: 30px 60px 0 40px;
+    flex-basis: 45%;
+    h1{
+      font-size: 2.5rem;
+    }
+    p, a{
+      font-size: 18px;
+    }
+  }
+}
